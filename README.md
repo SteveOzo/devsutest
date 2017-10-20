@@ -1,1 +1,1 @@
-# Devsu test - Git Publico
+# Devsu test - Public Git
