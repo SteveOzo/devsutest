@@ -1,0 +1,7 @@
+services:
+	product-service:
+		build: ./app
+		volumes:
+			- ./app:/usr/src/app
+		ports:
+			- 5001:8888
