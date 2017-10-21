@@ -1,7 +1,15 @@
+version: '3'
+
 services:
-	product-service:
-		build: ./app
-		volumes:
-			- ./app:/usr/src/app
-		ports:
-			- 5001:8888
+  app:
+    image: prueba/hello-world
+    expose: 
+     - "8888" 
+
+  balanceador:
+    image: nginx2
+    ports:
+     - "8888:8888"
+    links:
+     - app
+

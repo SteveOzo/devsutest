@@ -32,6 +32,7 @@ class HomeHandler(tornado.web.RequestHandler):
         msg = {}
         msg["message"] = "Hello "+slug
         j=json.dumps(msg)
+        host=socket.gethostname()
         self.write(j)
 
 def main():
