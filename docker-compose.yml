@@ -15,8 +15,8 @@ services:
 
   pruebas:
     build: jenkins
-    volumes:
-     - ./jenkins/data:/var/jenkins_home
+    volumens:
+     - /var/run/docker.sock:/var/run/docker.sock
     ports:
-     - "8080:8080"
+     - "9000:8080"
     

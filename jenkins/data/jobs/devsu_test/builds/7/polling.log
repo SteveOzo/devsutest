@@ -1,0 +1,8 @@
+Started on 21-oct-2017 20:07:00
+Using strategy: Default
+[poll] Last Built Revision: Revision c3d58450115dc3ec97c7b156136a459d8f65b01c (refs/remotes/origin/master)
+ > git ls-remote -h https://github.com/SteveOzo/devsutest.git # timeout=10
+Found 1 remote heads on https://github.com/SteveOzo/devsutest.git
+[poll] Latest remote head revision on refs/heads/master is: 58148bd8e255cacb43de821866583c3a5fef5827
+Done. Took 1,1 Seg
+Changes found

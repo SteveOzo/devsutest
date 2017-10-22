@@ -1,0 +1,11 @@
+commit 2dda5b78d77ca11837e4fde3847e59f796953c1a
+tree a14118b4cfca4ad1debcd6ad2063dbdfe3edf0cc
+parent 58148bd8e255cacb43de821866583c3a5fef5827
+author steve <steven-s-47@hotmail.com> 2017-10-21 22:35:48 -0500
+committer steve <steven-s-47@hotmail.com> 2017-10-21 22:35:48 -0500
+
+    modified app Dockerfile
+
+
+
+:100644 100644 0b7121148f83ee9ea56587ee02a198b9568e130e 11b4cef82d67a21c0c480015e0b81e1a32335f3b M	app/Dockerfile

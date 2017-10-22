@@ -1,0 +1,41 @@
+Lanzada por el usuario [8mha:////4FVu024bwiowfxnAJyGMg711Pqltrd++IzKRwBRS+sVXAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9gqLS1KREAP10DtbBAAAA[0mprueba
+Ejecutando.en el espacio de trabajo /var/lib/jenkins/workspace/devsu_test
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/SteveOzo/devsutest.git # timeout=10
+Fetching upstream changes from https://github.com/SteveOzo/devsutest.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/SteveOzo/devsutest.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 871a34c3e84c83430e3df975235b55d3081ab593 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 871a34c3e84c83430e3df975235b55d3081ab593
+Commit message: "test file"
+ > git rev-list 159ad4b2f4d11ee6374dde66315ce5d621160e68 # timeout=10
+[devsu_test] $ bin/bash /tmp/jenkins354033532668220555.sh
+FATAL: la ejecución del comando ha fallado
+[8mha:////4GU2ooMwK1cm8VzTCzSL6gdFjpLkgf0/qkVV+yvvHhM0AAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.io.IOException: error=2, No existe el archivo o el directorio
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+Caused: java.io.IOException: Cannot run program "bin/bash" (in directory "/var/lib/jenkins/workspace/devsu_test"): error=2, No existe el archivo o el directorio
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:249)
+	at hudson.Proc$LocalProc.<init>(Proc.java:218)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:930)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:450)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:109)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:736)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:496)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:421)
+Build step 'Ejecutar linea de comandos (shell)' marked build as failure
+Finished: FAILURE
