@@ -3,8 +3,8 @@ version: '3'
 services:
   app:
     build: app
-    expose: 
-     - "8888" 
+    expose:
+     - "8888"
 
   balanceador:
     build: nginx
@@ -13,12 +13,11 @@ services:
     links:
      - app
 
-  pruebas:
-    build: jenkins
-    working_dir: $PWD
-    volumes:
-     - $PWD:$PWD
-     - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-     - "9000:8080"
-    
+#  pruebas:
+#    build: jenkins
+#    working_dir: $PWD
+#    volumes:
+#     - $PWD:$PWD
+#     - /var/run/docker.sock:/var/run/docker.sock
+#    ports:
+#     - "9000:8080"
