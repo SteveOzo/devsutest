@@ -2,14 +2,21 @@ version: '3'
 
 services:
   app:
-    image: prueba/hello-world
+    build: app
     expose: 
      - "8888" 
 
   balanceador:
-    image: nginx2
+    build: nginx
     ports:
      - "8888:8888"
     links:
      - app
 
+  pruebas:
+    build: jenkins
+    volumes:
+     - ./jenkins/data:/var/jenkins_home
+    ports:
+     - "8080:8080"
+    
